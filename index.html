@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./mfavcon.png" type="image/x-icon">
+</head>
+<body>
+    <pre><h1>
+
+        Today's problem-solving tasks:
+
+1.Write a JavaScript program to determine whether a given array is in descending order or not.
+
+Input: [40, 18, 3, 1]
+Output: Descending order
+
+2.Write a JavaScript program to determine whether a given array is in ascending order or not.
+
+Input: [24, 67, 89, 100, 101]
+Output: Ascendingm order
+    </h1></pre>
+    <script>
+
+//output descenting order
+
+var a = prompt("enter the numbers : ").split(" ").map(Number);
+console.log(a)
+//[40,18,3,1];
+
+var count = 0;
+for (var i = 0; i < a.length - 1; i++){
+    if (a[i] > a[i + 1]){
+        count++
+    }
+}
+if (count==a.length-1){
+    console.log("array is in descenting order")
+}
+
+
+//output ascending  order
+var a2 = prompt("enter the numbers  : ").split(" ").map(Number)
+console.log(a2)
+
+//[24,67,89,100,101];
+
+var count2 = 0;
+for (var i = 0; i < a2.length - 1; i++){
+    if (a2[i] < a2[i + 1]){
+        count2++
+    }
+}
+if (count2==a2.length-1){
+    console.log("array is in ascending order")
+}
+
+    </script>
+</body>
+</html>
